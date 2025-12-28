@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Weather Explorer</h1>
+    <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name...">
+        <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loader" class="hidden">Loading...</div>
+
+    <div id="result" class="hidden">
+        <div class="weather-card">
+            <h2 id="cityName"></h2>
+            <div class="temp-main"><span id="temp"></span>°C</div>
+            <p id="desc" class="capitalize"></p>
+            <div class="grid">
+                <p>Feels like: <b id="feelsLike"></b>°C</p>
+                <p>Wind: <b id="wind"></b> m/s</p>
+                <p>Rain (3h): <b id="rain"></b> mm</p>
+                <p>Coords: [<span id="coords"></span>]</p>
+            </div>
+        </div>
+
+        <div class="extra-card">
+            <h3>Country Fact: <span id="countryName"></span></h3>
+            <img id="flag" src="" alt="Flag" width="50">
+            <p>Population: <b id="population"></b></p>
+            <p>Local Currency: <b id="currency"></b></p>
+        </div>
+    </div>
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
